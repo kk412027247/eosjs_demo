@@ -1,0 +1,12 @@
+{
+  "name": "connect_eos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "eosjs": "^20.0.0-beta2",
+    "eosjs-ecc": "^4.0.4",
+    "node-fetch": "^2.2.0",
+    "text-encoding": "^0.7.0"
+  }
+}
