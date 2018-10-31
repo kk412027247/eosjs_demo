@@ -43,6 +43,13 @@ const  runRpc = async () => {
   const actionHistory = await rpc.history_get_actions('tmd111111111');
   console.log(actionHistory);
 
+  //table_row
+
+  const tableRow = await rpc.get_table_rows({"scope":"eosio","code":"eosio","table":"global","json":true})
+  console.log(tableRow)
+
+  
+
 };
 
 

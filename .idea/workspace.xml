@@ -89,7 +89,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="367" />
+    <option name="y" value="22" />
     <option name="width" value="1249" />
     <option name="height" value="1027" />
   </component>
