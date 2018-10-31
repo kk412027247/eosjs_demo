@@ -4,7 +4,7 @@
 可以用EOS主网，或者是现成的测试网络，又或者是本地搭建的网络。
 我这里为了测试方便，使用了官方的测试网络。
 地址：http://jungle.cryptolions.io/
-----
+
 
 
 
@@ -261,7 +261,7 @@ console.log(accountInfo2);
 - 请求体：{"account_name" : "tmd111111111"}
 
 ----
-最后附上全部代码
+
 
 
 
