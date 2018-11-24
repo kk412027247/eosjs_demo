@@ -12,7 +12,7 @@ const signatureProvider = new JsSignatureProvider([privateKey]);
 
 // rpc 对象可以运行 eos的rpc命令
 // rpc 命令查询 https://eosio.github.io/eosjs/classes/json_rpc.jsonrpc.html
-const rpc = new JsonRpc('http://junglehistory.cryptolions.io:18888', { fetch });
+const rpc = new JsonRpc('https://jungle2.cryptolions.io', { fetch });
 
 
 // api 对象可以运行eos的合约，比如转账，创建账号等等(需要费用的操作)
@@ -32,12 +32,16 @@ const  runRpc = async () => {
   const accountInfo = await rpc.get_account('tmd111111111');
   console.log(accountInfo);
 
-  const accountInfo2 = await rpc.get_account('tmdqqqqqqqqq');
-  console.log(accountInfo2);
+
 
   //获取账号tmd111111111的资产,查询资产的时候要加上资产的合约名字eosio.token
   const balance = await rpc.get_currency_balance('eosio.token','tmd111111111');
   console.log(balance);
+
+
+  const accountInfo2 = await rpc.get_account('tmdqqqqqqqqq');
+  console.log(accountInfo2);
+
 
   //获取账号操作历史
   const actionHistory = await rpc.history_get_actions('tmd111111111');
@@ -121,7 +125,7 @@ const createAccount = async () => {
         data: {
           payer: 'tmd111111111',
           receiver: 'tmdqqqqqqqqq',
-          bytes: 3000,
+          bytes: 8192,
         },
       },
       {
@@ -163,7 +167,7 @@ const transfer = async () => {
       data: {
         from: 'tmd111111111',
         to: 'tmdqqqqqqqqq',
-        quantity: '10.1234 EOS',
+        quantity: '1.1234 EOS',
         memo: '',
       },
     }]
