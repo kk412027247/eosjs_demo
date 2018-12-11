@@ -20,6 +20,8 @@ const  runRpc = async () => {
   const balance = await rpc.get_currency_balance('eosio.token','tmd111111111');
   console.log(balance);
 
+  const balance2 = await rpc.get_currency_balance('tmd111111111','tmd111111111');
+  console.log('balance2',balance2);
 
   const accountInfo2 = await rpc.get_account('tmdqqqqqqqqq');
   console.log(accountInfo2);
@@ -34,7 +36,7 @@ const  runRpc = async () => {
   const tableRow = await rpc.get_table_rows({"scope":"eosio","code":"eosio","table":"global","json":true})
   console.log(tableRow)
 
-  
+
 
 };
 
