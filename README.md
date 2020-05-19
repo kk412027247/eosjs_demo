@@ -44,7 +44,7 @@
 ```
 npm install eosjs@beta node-fetch text-encoding eosjs-ecc
 
-// eosjs-ecc 是在node环境下生成公私钥匙的。
+// eosjs-ecc 是在node环境下生成公私钥匙的工具包。
 ```
 
 ### 模组调用
